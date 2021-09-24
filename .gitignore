@@ -1,8 +1,5 @@
-haters/
-
 *.sketch
 *.fig
-course-layout.md
 
 # Logs
 logs
@@ -63,15 +60,3 @@ typings/
 # gatsby files
 .cache/
 public
-
-# Mac files
-.DS_Store
-
-# Yarn
-yarn-error.log
-.pnp/
-.pnp.js
-# Yarn Integrity file
-.yarn-integrity
-
-finished-files-before-record/
