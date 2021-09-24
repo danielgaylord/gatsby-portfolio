@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_minimal=self.webpackChunkgatsby_starter_minimal||[]).push([[457],{5249:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});var a=t(7294);function r(){return a.createElement(a.Fragment,null,a.createElement("p",null,"This is where I plan on keeping track of my games"))}}}]);
+//# sourceMappingURL=component---src-pages-collection-js-db61e27b577fd09caea9.js.map
