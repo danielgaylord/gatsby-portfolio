@@ -18,6 +18,7 @@
   "license": "0BSD",
   "dependencies": {
     "gatsby": "^3.13.1",
+    "normalize.css": "^8.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
