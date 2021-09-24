@@ -1,6 +1,9 @@
 module.exports = {
     siteMetadata: {
-        siteUrl: `https://www.yourdomain.tld`,
+        title: `DG's Web Portfolio & Stuff`,
+        siteUrl: `https://danielgaylord.github.io`,
+        description: `This is the place I go to try new web things and share thoughts or anything else I feel ppeople might not care about`
+
     },
     pathPrefix: "/gatsby-portfolio",
     plugins: [
