@@ -5,7 +5,6 @@ npm-debug.log*
 
 # Dependency directories
 node_modules/
-jspm_packages/
 
 # Optional npm cache directory
 .npm
@@ -21,4 +20,4 @@ jspm_packages/
 
 # gatsby files
 .cache/
-public
+public/
