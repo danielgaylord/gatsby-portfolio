@@ -6,6 +6,8 @@ module.exports = {
     },
     pathPrefix: "/gatsby-portfolio",
     plugins: [
-
+        `gatsby-plugin-image`,
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
     ]
 }
