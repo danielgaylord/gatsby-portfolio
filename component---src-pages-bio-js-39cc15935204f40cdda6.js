@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_minimal=self.webpackChunkgatsby_starter_minimal||[]).push([[767],{3366:function(e,t,n){n.r(t),n.d(t,{default:function(){return a}});var r=n(7294);function a(){return r.createElement(r.Fragment,null,r.createElement("p",null,"Bio, Experience, About"))}}}]);
-//# sourceMappingURL=component---src-pages-bio-js-39cc15935204f40cdda6.js.map
