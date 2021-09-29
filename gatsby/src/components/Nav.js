@@ -34,6 +34,7 @@ const NavStyles = styled.nav`
   }
   .jiggle:hover {
     transform: rotate(4deg);
+    animation: jiggle 0.5s infinite linear;
   }
   a {
     font-size: 3rem;
@@ -41,6 +42,14 @@ const NavStyles = styled.nav`
     &:hover {
       color: var(--red);
     }
+  }
+
+  @keyframes jiggle {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(4deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-4deg);}
+    100% {transform: rotate(0deg);}
   }
 `;
 
