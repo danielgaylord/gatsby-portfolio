@@ -15,9 +15,6 @@ export default function Nav() {
           <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <Link to="/collection">Games</Link>
-        </li>
-        <li>
           <Link to="/musings">Musings</Link>
         </li>
       </ul>
