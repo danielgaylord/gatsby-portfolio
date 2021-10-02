@@ -6,24 +6,17 @@ import Footer from './Footer';
 import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography';
 
-const SiteBorderStyles = styled.div`
-  max-width: 1000px;
-  margin: 12rem auto 4rem auto;
-  margin-top: clamp(2rem 10vw, 12rem);
-  background-color: grey;
-  background-size: 1500px;
-  padding: 5px;
-  box-shadow: 0 0 5px 3px rgba(0,0,0,0.044);
-  border: 5px solid white;
-  @media(max-width: 1100px) {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
+const FlexStyles = styled.div`
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 `;
 
 const ContentStyles = styled.div`
-  background: white;
-  padding: 2rem;
+  flex: 1 0 auto;
+  padding: 5rem 15rem;
 `;
 
 export default function Layout({ children }) {
@@ -31,13 +24,13 @@ export default function Layout({ children }) {
     <>
       <GlobalStyles />
       <Typography />
-      <SiteBorderStyles>
+      <FlexStyles>
+        <Nav />
         <ContentStyles>
-          <Nav />
           {children}
-          <Footer />
         </ContentStyles>
-      </SiteBorderStyles>
+        <Footer />
+      </FlexStyles>
     </>
   );
 }

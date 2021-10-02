@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { StaticImage } from "gatsby-plugin-image";
 
 const NavStyles = styled.nav`
   margin-bottom: 3rem;
+  padding: 5rem 15rem;
+  flex-shrink: 0;
+  box-shadow: 0 5px 25px 0px rgba(0,0,0,0.34);
+
   ul {
     margin: 0;
     padding: 0;
@@ -21,35 +24,19 @@ const NavStyles = styled.nav`
     flex-direction: row;
     justify-content: start;
   }
-  .links {
+  .home {
     grid-column: 1;
-    grid-gap: 2rem;
   }
-  .social {
+  .links {
     grid-column: 2;
-    grid-gap: 1rem;
-  }
-  img {
-    width: 4rem;
-  }
-  .jiggle:hover {
-    transform: rotate(4deg);
-    animation: jiggle 0.5s infinite linear;
+    grid-gap: 2rem;
   }
   a {
     font-size: 3rem;
     text-decoration: none;
     &:hover {
-      color: var(--red);
+      color: var(--lakeblue);
     }
-  }
-
-  @keyframes jiggle {
-    0% {transform: rotate(0deg);}
-    25% {transform: rotate(4deg);}
-    50% {transform: rotate(0deg);}
-    75% {transform: rotate(-4deg);}
-    100% {transform: rotate(0deg);}
   }
 `;
 
@@ -57,10 +44,10 @@ export default function Nav() {
   return (
     <NavStyles>
       <div class="navbar">
+        <div class="home navpart">
+        <Link to="/"><strong>Dan Gaylord</strong></Link>
+        </div>
         <ul class="links navpart">
-          <li>
-            <Link to="/"><strong>Home</strong></Link>
-          </li>
           <li>
             <Link to="/projects"><strong>Projects</strong></Link>
           </li>
@@ -69,17 +56,6 @@ export default function Nav() {
           </li>
           <li>
             <Link to="/bio"><strong>Bio</strong></Link>
-          </li>
-        </ul>
-        <ul class="social navpart">
-          <li class="jiggle">
-            <a href="https://www.facebook.com/danielgaylord7" target="_blank" rel="noreferrer"><StaticImage src="../assets/images/Facebook-64px.png" alt="Facebook Logo"/></a>
-          </li>
-          <li class="jiggle">
-            <a href="https://www.linkedin.com/in/danielgaylord/" target="_blank" rel="noreferrer"><StaticImage src="../assets/images/Linkedin-64px.png" alt="Linkedin Logo"/></a>
-          </li>
-          <li class="jiggle">
-            <a href="https://github.com/danielgaylord" target="_blank" rel="noreferrer"><StaticImage src="../assets/images/GitHub-Mark-64px.png" alt="GitHub Logo"/></a>
           </li>
         </ul>
       </div>
