@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import background from '../assets/images/background.svg';
 
 const GlobalStyles = createGlobalStyle`
     :root {
@@ -13,9 +12,6 @@ const GlobalStyles = createGlobalStyle`
         --slategrey: #8b8c89;
     }
     html {
-        //background-image: url(${background});
-        //background-size: 400px;
-        //background-attachment: fixed;
         font-size: 10px;
         height: 100%;
     }
@@ -24,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         font-size: 2rem;
-        background: white;
+        //background: white;
     }
 
     /*

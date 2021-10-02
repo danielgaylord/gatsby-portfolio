@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import background from '../assets/images/background.svg';
 
 const NavStyles = styled.nav`
   margin-bottom: 3rem;
   padding: 5rem 15rem;
   flex-shrink: 0;
   box-shadow: 0 5px 25px 0px rgba(0,0,0,0.34);
+  background-image: url(${background});
+  background-size: 250px;
+  background-attachment: fixed;
 
   ul {
     margin: 0;
