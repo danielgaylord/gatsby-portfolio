@@ -6,10 +6,12 @@ const GlobalStyles = createGlobalStyle`
         --white: #ffffff;
         --grey: #efefef;
         --brightgrey: #e7ecef;
-        --metalblue: #274c77;
-        --lakeblue: #6096ba;
-        --babyblue: #a3cef1;
         --slategrey: #8b8c89;
+        --metalblue: #274c77;
+        --lakeblue: #568AC8;
+        --babyblue: #a3cef1;
+        --curryorange: #775227;
+        --camelbrown: #C89456;
     }
     html {
         font-size: 10px;
