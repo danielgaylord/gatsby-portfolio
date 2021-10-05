@@ -26,19 +26,19 @@ const FooterStyles = styled.footer`
 export default function Footer() {
   return (
     <FooterStyles>
-      <div class="flexbar">
-        <p class="copy flexpart">&copy; Dan Gaylord {new Date().getFullYear()}</p>
-        <ul class="social flexpart">
-          <li class="jiggle">
+      <div className="flexbar">
+        <p className="copy flexpart">&copy; Dan Gaylord {new Date().getFullYear()}</p>
+        <ul className="social flexpart">
+          <li className="jiggle">
             <a href="https://www.facebook.com/danielgaylord7" target="_blank" rel="noreferrer"><StaticImage src="../assets/images/Facebook-64px.png" alt="Facebook Logo"/></a>
           </li>
-          <li class="jiggle">
+          <li className="jiggle">
             <a href="https://www.linkedin.com/in/danielgaylord/" target="_blank" rel="noreferrer"><StaticImage src="../assets/images/Linkedin-64px.png" alt="Linkedin Logo"/></a>
           </li>
-          <li class="jiggle">
+          <li className="jiggle">
             <a href="https://github.com/danielgaylord" target="_blank" rel="noreferrer"><StaticImage src="../assets/images/GitHub-Mark-64px.png" alt="GitHub Logo"/></a>
           </li>
-          <li class="jiggle">
+          <li className="jiggle">
             <a href="mailto:danielgaylord@gmail.com" target="_blank" rel="noreferrer"><StaticImage src="../assets/images/icons8-gmail-64.png" alt="Gmail Logo"/></a>
           </li>
         </ul>

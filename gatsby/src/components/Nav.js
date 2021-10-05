@@ -46,17 +46,17 @@ const NavStyles = styled.nav`
 export default function Nav() {
   return (
     <NavStyles>
-      <div class="flexbar">
-        <div class="home flexpart">
-          <a href="/">
+      <div className="flexbar">
+        <div className="home flexpart">
+          <Link to="/">
             <StaticImage src="../assets/images/logo2-die.png" alt="Dan Gaylord Logo"/>
-          </a>
+          </Link>
         </div>
-        <ul class="links flexpart">
+        <ul className="links flexpart">
           <li>
             <Link to="/projects">Projects</Link>
           </li>
-          <li class="jiggle">
+          <li className="jiggle">
             <Link to="/musings">Musings</Link>
           </li>
           <li>

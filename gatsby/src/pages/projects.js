@@ -9,7 +9,7 @@ import portfolio from "../assets/images/gatsby-portfolio.png";
 const ProjectStyles = styled.div`
   .project-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 0rem;
     grid-gap: 2rem;
   }
@@ -19,27 +19,29 @@ const ProjectStyles = styled.div`
     border-radius: 25px;
     background-size: cover;
     background-position: 50% 50%;
-    padding: 0 0 32px;
+    padding: 0 0 4rem;
     justify-content: center;
     animation: zoom-out 0.5s;
     & .project-desc {
       color: white;
-      padding: 16px;
+      padding: 2rem;
       height: 100%;
       border-radius: 25px;
       background: transparent;
       transition: background 0.4s, opacity 0.4s;
     }
     & h4 {
-      margin: -16px -16px 16px;
-      padding: 16px;
+      margin: -2rem -2rem 2rem;
+      padding: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
       border-radius: 25px 25px 0 0;
       text-align: center;
-      background: black;
+      background: var(--metalblue);
       z-index: 1;
     }
     & .project-text {
-      font-size: 14px;
+      font-size: 1.5rem;
       opacity: 0;
       transition: opacity 0.4s;
     }
@@ -49,44 +51,56 @@ const ProjectStyles = styled.div`
         opacity: 1;
       }
       & .project-desc {
-        background: black;
+        background: var(--black);
       }
     }
+  }
+  a {
+    color: var(--camelbrown)
   }
 `;
 
 export default function ProjectsPage() {
   return (
     <ProjectStyles>
-      <div class="page-top center">
-        <p class="headline">A sampling of personal and professional works</p>
-        <p class="subtitle">Mostly done in my free time, when there's time.</p>
+      <div className="page-top center">
+        <p className="headline">A sampling of personal and professional works</p>
+        <p className="subtitle">Mostly done in my free time, when there's time.</p>
+        <p>(Click to go to each project's respective GitHub repository)</p>
       </div>
-      <div class="project-container">
-        <div class="project" style={{ backgroundImage: "url(" + pydoku + ")" }}>
-          <div class="project-desc">
+      <div className="project-container">
+        <button className="project" style={{ backgroundImage: "url(" + pydoku + ")" }} onClick={()=> window.open("https://github.com/danielgaylord/pydoku-solver", "_blank")}>
+          <div className="project-desc">
             <h4>Sudoku Solver</h4>
-            <span class="project-text">
-              A quick project where I used python to solve Sudoku puzzles as 'I do'. Doesn't (yet) include an algorith to solve naked pairs.
-            </span>
+            <p className="project-text">
+              A quick project that algorithmicly solves Sudoku puzzles as I would 'by hand'. Doesn't (yet) include the ability to solve naked pairs.
+            </p>
+            <p className ="project-text"><strong>Language(s):</strong> Python</p>
+            <p className ="project-text"><strong>Next Step(s):</strong> GUI, improve algorithm</p>
           </div>
-        </div>
-        <div class="project" style={{ backgroundImage: "url(" + blueprint + ")" }}>
-          <div class="project-desc">
+        </button>
+        <button className="project" style={{ backgroundImage: "url(" + blueprint + ")" }} onClick={()=> window.open("https://github.com/nycdoe-cs4all/cs4all-blueprint-gatsby", "_blank")}>
+          <div className="project-desc">
             <h4>NYC DOE CS4All Blueprint</h4>
-            <span class="project-text">
-              Ported the old Blueprint website (not created by me) to GatsbyJS with a headless WordPress for faster load times and easier upkeep.
-            </span>
+            <p className="project-text">
+              Ported an older version of the <a href="https://github.com/nycdoe-cs4all/blueprint-learning-site" target="_blank" rel="noreferrer">CS4All Blueprint website</a> (not created by me) to GatsbyJS with a headless WordPress for faster load times and easier upkeep.
+            </p>
+            <p className ="project-text"><strong>Language(s):</strong> HTML, CSS, Javascript</p>
+            <p className ="project-text"><strong>Libraries/Tools:</strong> GatsbyJS, React, Headless WordPress</p>
+            <p className ="project-text"><strong>Next Step(s):</strong> Improving responsiveness, modularize code</p>
           </div>
-        </div>
-        <div class="project" style={{ backgroundImage: "url(" + portfolio + ")" }}>
-          <div class="project-desc">
+        </button>
+        <button className="project" style={{ backgroundImage: "url(" + portfolio + ")" }} onClick={()=> window.open("https://github.com/danielgaylord/gatsby-portfolio", "_blank")}>
+          <div className="project-desc">
             <h4>Portfolio Website</h4>
-            <span class="project-text">
+            <p className="project-text">
               My personal portfolio page using GatsbyJS and Sanity. This site that you are viewing right now!
-            </span>
+            </p>
+            <p className ="project-text"><strong>Language(s):</strong> HTML, CSS, Javascript</p>
+            <p className ="project-text"><strong>Libraries/Tools:</strong> GatsbyJS, React, Sanity</p>
+            <p className ="project-text"><strong>Next Step(s):</strong> Improving responsiveness, Blog-like page</p>
           </div>
-        </div>
+        </button>
       </div>
     </ProjectStyles>
   )
