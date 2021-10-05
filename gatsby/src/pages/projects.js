@@ -7,6 +7,8 @@ import blueprint from "../assets/images/nycdoe-cs4all-blueprint.png";
 import portfolio from "../assets/images/gatsby-portfolio.png";
 
 const ProjectStyles = styled.div`
+  
+
   .page-top {
     width: 75%;
     margin: auto;

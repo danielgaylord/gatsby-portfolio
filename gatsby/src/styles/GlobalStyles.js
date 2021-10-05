@@ -11,7 +11,8 @@ const GlobalStyles = createGlobalStyle`
         --lakeblue: #568AC8;
         --babyblue: #a3cef1;
         --curryorange: #775227;
-        --camelbrown: #C89456;
+        --camelbrown: #c89456;
+        --tanpeach: #f1c5a2;
     }
     html {
         font-size: 10px;
