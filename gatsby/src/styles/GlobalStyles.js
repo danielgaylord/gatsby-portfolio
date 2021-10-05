@@ -70,6 +70,20 @@ const GlobalStyles = createGlobalStyle`
         align-self: center;
     }
 
+    .call-out {
+        font-size: 5rem;
+        font-weight: bold;
+    }
+
+    .dive-in {
+        & p:nth-child(2) {
+        text-align: center;
+        }
+        & p:nth-child(3) {
+        text-align: right;
+        }
+    }
+
     .jiggle:hover {
         animation: jiggle 0.5s infinite linear;
     }
