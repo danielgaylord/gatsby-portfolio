@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_minimal=self.webpackChunkgatsby_starter_minimal||[]).push([[186],{6795:function(e,t,a){a.r(t),a.d(t,{default:function(){return l}});var n=a(7294);function l(){return n.createElement(n.Fragment,null,n.createElement("div",{className:"page-top center"},n.createElement("p",{className:"headline"},"My collections of thoughts. Not a blog (maybe a blog...)")),n.createElement("p",{className:"center"},"Work in progress, I'll get there eventually..."))}}}]);
+//# sourceMappingURL=component---src-pages-musings-js-f21c2a96a33b9fa4900d.js.map
