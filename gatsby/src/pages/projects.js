@@ -7,19 +7,6 @@ import blueprint from "../assets/images/nycdoe-cs4all-blueprint.png";
 import portfolio from "../assets/images/gatsby-portfolio.png";
 
 const ProjectStyles = styled.div`
-  
-
-  .page-top {
-    width: 75%;
-    margin: auto;
-    text-align: center;
-  }
-  .headline {
-    font-size: 36px;
-  }
-  .subtitle {
-    font-size: 24px;
-  }
   .project-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -71,9 +58,9 @@ const ProjectStyles = styled.div`
 export default function ProjectsPage() {
   return (
     <ProjectStyles>
-      <div class="page-top">
+      <div class="page-top center">
         <p class="headline">A sampling of personal and professional works</p>
-        <p class="subtitle">Click on a project to learn more about it.</p>
+        <p class="subtitle">Mostly done in my free time, when there's time.</p>
       </div>
       <div class="project-container">
         <div class="project" style={{ backgroundImage: "url(" + pydoku + ")" }}>

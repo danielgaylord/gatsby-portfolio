@@ -15,7 +15,6 @@ const GlobalStyles = createGlobalStyle`
         --tanpeach: #f1c5a2;
     }
     html {
-        font-size: 10px;
         height: 100%;
     }
     body {
@@ -23,7 +22,6 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         font-size: 2rem;
-        //background: white;
     }
 
     /*
@@ -52,6 +50,24 @@ const GlobalStyles = createGlobalStyle`
 
     img {
         max-width: 100%;
+    }
+    a { 
+        &:hover {
+        color: var(--curryorange);
+        text-decoration: var(---camelbrown);
+        }
+    }
+
+    .flexbar {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0rem;
+    }
+    .flexpart {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-self: center;
     }
 
     .jiggle:hover {

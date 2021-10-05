@@ -1,9 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
-import "@fontsource/nunito";
+import "@fontsource/exo";
 
 const Typography = createGlobalStyle`
     html {
-        font-family: "Nunito", -apple--apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: "Exo", -apple--apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 10px;
         color: var(--black);
     }
     p, li {

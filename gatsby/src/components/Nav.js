@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { StaticImage } from "gatsby-plugin-image";
 import styled from 'styled-components';
 import background from '../assets/images/background.svg';
 
 const NavStyles = styled.nav`
-  margin-bottom: 3rem;
-  padding: 5rem 15rem;
+  padding: 3rem 15rem 3rem 11rem;
   flex-shrink: 0;
   box-shadow: 0 5px 25px 0px rgba(0,0,0,0.34);
   background-image: url(${background});
@@ -18,16 +18,6 @@ const NavStyles = styled.nav`
     text-align: center;
     list-style: none;
   }
-  .navbar {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 0rem;
-  }
-  .navpart {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-  }
   .home {
     grid-column: 1;
   }
@@ -36,10 +26,19 @@ const NavStyles = styled.nav`
     grid-gap: 2rem;
   }
   a {
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: bold;
     text-decoration: none;
+    
     &:hover {
-      color: var(--lakeblue);
+      color: var(--curryorange);
+    }
+  }
+  img {
+    width: 8rem;
+    animation: zoom-out 0.5s forwards;
+    &:hover {
+      animation: zoom-in 0.5s forwards;
     }
   }
 `;
@@ -47,19 +46,21 @@ const NavStyles = styled.nav`
 export default function Nav() {
   return (
     <NavStyles>
-      <div class="navbar">
-        <div class="home navpart">
-        <Link to="/"><strong>Dan Gaylord</strong></Link>
+      <div class="flexbar">
+        <div class="home flexpart">
+          <a href="/">
+            <StaticImage src="../assets/images/logo2-die.png" alt="Dan Gaylord Logo"/>
+          </a>
         </div>
-        <ul class="links navpart">
+        <ul class="links flexpart">
           <li>
-            <Link to="/projects"><strong>Projects</strong></Link>
+            <Link to="/projects">Projects</Link>
           </li>
           <li class="jiggle">
-            <Link to="/musings"><strong>Musings</strong></Link>
+            <Link to="/musings">Musings</Link>
           </li>
           <li>
-            <Link to="/bio"><strong>Bio</strong></Link>
+            <Link to="/bio">Bio</Link>
           </li>
         </ul>
       </div>

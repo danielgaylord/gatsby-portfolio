@@ -3,8 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import styled from 'styled-components';
 
 const FooterStyles = styled.footer`
-  margin-top: 3rem;
-  padding: 5rem 30rem 3rem;
+  padding: 3rem 30rem 3rem;
   background: var(--slategrey);
   flex-shrink: 0;
   color: white;
@@ -14,16 +13,6 @@ const FooterStyles = styled.footer`
     padding: 0;
     text-align: center;
     list-style: none;
-  }
-  .footbar {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 0rem;
-  }
-  .footpart {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
   }
   .social {
     grid-column: 2;
@@ -37,9 +26,9 @@ const FooterStyles = styled.footer`
 export default function Footer() {
   return (
     <FooterStyles>
-      <div class="footbar">
-        <p class="copy footpart">&copy; Dan Gaylord {new Date().getFullYear()}</p>
-        <ul class="social footpart">
+      <div class="flexbar">
+        <p class="copy flexpart">&copy; Dan Gaylord {new Date().getFullYear()}</p>
+        <ul class="social flexpart">
           <li class="jiggle">
             <a href="https://www.facebook.com/danielgaylord7" target="_blank" rel="noreferrer"><StaticImage src="../assets/images/Facebook-64px.png" alt="Facebook Logo"/></a>
           </li>
@@ -48,6 +37,9 @@ export default function Footer() {
           </li>
           <li class="jiggle">
             <a href="https://github.com/danielgaylord" target="_blank" rel="noreferrer"><StaticImage src="../assets/images/GitHub-Mark-64px.png" alt="GitHub Logo"/></a>
+          </li>
+          <li class="jiggle">
+            <a href="mailto:danielgaylord@gmail.com" target="_blank" rel="noreferrer"><StaticImage src="../assets/images/icons8-gmail-64.png" alt="Gmail Logo"/></a>
           </li>
         </ul>
       </div>
