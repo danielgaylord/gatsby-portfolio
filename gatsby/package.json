@@ -17,6 +17,7 @@
   },
   "license": "0BSD",
   "dependencies": {
+    "@fontsource/exo": "^4.5.0",
     "@fontsource/nunito": "^4.5.0",
     "gatsby": "^3.13.1",
     "gatsby-plugin-image": "^1.14.0",

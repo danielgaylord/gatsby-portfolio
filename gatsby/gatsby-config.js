@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `DG's Web Portfolio & Stuff`,
+        title: `Dan Gaylord - Educator | Tinkerer`,
         siteUrl: `https://danielgaylord.github.io`,
         description: `This is the place I go to try new web things and share thoughts or anything else I feel people might not care about`
     },
