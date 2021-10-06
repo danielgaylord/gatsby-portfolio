@@ -22,6 +22,17 @@ const Typography = createGlobalStyle`
     .center {
         text-align: center;
     }
+
+    @media screen and (max-width: 1024px) {
+        html {
+        font-size: 8px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        html {
+        font-size: 6px;
+        }
+    }
 `;
 
 export default Typography;

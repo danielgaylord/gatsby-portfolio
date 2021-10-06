@@ -15,6 +15,13 @@ const BioStyles = styled.div`
     float: right;
     width: 60%;
   }
+
+  @media screen and (max-width: 960px) {
+    .bio-pic, .bio-text {
+      float: none;
+      margin: auto;
+    }
+  }
 `;
 
 export default function BioPage() {

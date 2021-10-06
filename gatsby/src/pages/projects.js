@@ -58,6 +58,17 @@ const ProjectStyles = styled.div`
   a {
     color: var(--camelbrown)
   }
+
+  @media screen and (max-width: 1600px) {
+    .project-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .project-container {
+      grid-template-columns: 1fr;
+    }
+  }
 `;
 
 export default function ProjectsPage() {

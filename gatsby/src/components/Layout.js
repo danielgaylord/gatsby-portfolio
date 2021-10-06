@@ -24,10 +24,10 @@ const ContentStyles = styled.div`
     margin-bottom: 5rem;
   }
   .headline {
-    font-size: 36px;
+    font-size: 4rem;
   }
   .subtitle {
-    font-size: 24px;
+    font-size: 3rem;
   }
 `;
 
