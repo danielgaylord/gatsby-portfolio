@@ -21,6 +21,13 @@ const FooterStyles = styled.footer`
   img {
     width: 4rem;
   }
+
+  @media screen and (max-width: 1024px) {
+    padding: 2rem 20rem 2rem;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 1rem 10rem 1rem;
+  }
 `;
 
 export default function Footer() {

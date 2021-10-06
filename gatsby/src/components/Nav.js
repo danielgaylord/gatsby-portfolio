@@ -41,6 +41,13 @@ const NavStyles = styled.nav`
       animation: zoom-in 0.5s forwards;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    padding: 2rem 10rem 2rem 7rem;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 1rem 5rem 1rem 3rem;
+  }
 `;
 
 export default function Nav() {

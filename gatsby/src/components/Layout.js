@@ -29,6 +29,13 @@ const ContentStyles = styled.div`
   .subtitle {
     font-size: 3rem;
   }
+
+  @media screen and (max-width: 1024px) {
+    padding: 3rem 11rem;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 1rem 2rem;
+  }
 `;
 
 export default function Layout({ children }) {
