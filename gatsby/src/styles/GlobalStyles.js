@@ -14,11 +14,11 @@ const GlobalStyles = createGlobalStyle`
         --camelbrown: #c89456;
         --tanpeach: #f1c5a2;
     }
-    html {
+    html, #___gatsby, #gatsby-focus-wrapper {
         height: 100%;
     }
     body {
-        min-height: 100%;
+        height: 100%;
         margin: 0;
         padding: 0;
         font-size: 2rem;

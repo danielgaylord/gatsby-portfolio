@@ -7,7 +7,7 @@ import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography';
 
 const FlexStyles = styled.div`
-  min-height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -15,7 +15,7 @@ const FlexStyles = styled.div`
 `;
 
 const ContentStyles = styled.div`
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   padding: 5rem 20rem;
 
   .page-top {

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const FooterStyles = styled.footer`
   padding: 3rem 30rem 3rem;
   background: var(--slategrey);
-  flex-shrink: 0;
+  flex: 0 1 auto;
   color: white;
 
   ul {

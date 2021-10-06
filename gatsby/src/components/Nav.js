@@ -6,7 +6,7 @@ import background from '../assets/images/background.svg';
 
 const NavStyles = styled.nav`
   padding: 3rem 15rem 3rem 11rem;
-  flex-shrink: 0;
+  flex: 0 1 auto;
   box-shadow: 0 5px 25px 0px rgba(0,0,0,0.34);
   background-image: url(${background});
   background-size: 250px;
