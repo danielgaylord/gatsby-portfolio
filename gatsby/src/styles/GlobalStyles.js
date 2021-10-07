@@ -54,6 +54,7 @@ const GlobalStyles = createGlobalStyle`
     a { 
         &:hover {
             color: var(--curryorange);
+            text-decoration: var(---camelbrown);
         }
     }
 
