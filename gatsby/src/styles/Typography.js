@@ -25,12 +25,12 @@ const Typography = createGlobalStyle`
 
     @media screen and (max-width: 1024px) {
         html {
-        font-size: 8px;
+            font-size: 8px;
         }
     }
     @media screen and (max-width: 600px) {
         html {
-        font-size: 6px;
+            font-size: 6px;
         }
     }
 `;

@@ -53,8 +53,7 @@ const GlobalStyles = createGlobalStyle`
     }
     a { 
         &:hover {
-        color: var(--curryorange);
-        text-decoration: var(---camelbrown);
+            color: var(--curryorange);
         }
     }
 
@@ -81,6 +80,13 @@ const GlobalStyles = createGlobalStyle`
         }
         & p:nth-child(3) {
         text-align: right;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .call-out, .dive-in {
+            margin: auto;
+            width: 90%;
         }
     }
 

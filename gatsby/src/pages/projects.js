@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-//import { StaticImage } from "gatsby-plugin-image";
 
 import pydoku from "../assets/images/pydoku-solver.png";
 import blueprint from "../assets/images/nycdoe-cs4all-blueprint.png";
@@ -9,18 +8,20 @@ import portfolio from "../assets/images/gatsby-portfolio.png";
 const ProjectStyles = styled.div`
   .project-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
     margin-top: 0rem;
     grid-gap: 2rem;
+    justify-content: center;
   }
   .project {
     margin: 3rem;
     display: flex;
     border-radius: 25px;
-    background-size: cover;
-    background-position: 50% 50%;
+    background-color: var(--lakeblue);
+    background-size: 100%;
+    background-position: center 6rem;
+    background-repeat: no-repeat;
     padding: 0 0 4rem;
-    justify-content: center;
     animation: zoom-out 0.5s;
     & .project-desc {
       color: white;
@@ -57,17 +58,6 @@ const ProjectStyles = styled.div`
   }
   a {
     color: var(--camelbrown)
-  }
-
-  @media screen and (max-width: 1600px) {
-    .project-container {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  @media screen and (max-width: 960px) {
-    .project-container {
-      grid-template-columns: 1fr;
-    }
   }
 `;
 
@@ -109,7 +99,7 @@ export default function ProjectsPage() {
             </p>
             <p className ="project-text"><strong>Language(s):</strong> HTML, CSS, Javascript</p>
             <p className ="project-text"><strong>Libraries/Tools:</strong> GatsbyJS, React, Sanity</p>
-            <p className ="project-text"><strong>Next Step(s):</strong> Improving responsiveness, Blog-like page</p>
+            <p className ="project-text"><strong>Next Step(s):</strong> Blog-like page, minor improvements and tests</p>
           </div>
         </button>
       </div>
