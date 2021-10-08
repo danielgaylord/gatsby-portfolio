@@ -99,7 +99,7 @@ export default function ProjectsPage() {
             </p>
             <p className ="project-text"><strong>Language(s):</strong> HTML, CSS, Javascript</p>
             <p className ="project-text"><strong>Libraries/Tools:</strong> GatsbyJS, React, Sanity</p>
-            <p className ="project-text"><strong>Next Step(s):</strong> Blog-like page, minor improvements and tests</p>
+            <p className ="project-text"><strong>Next Step(s):</strong> Improvements and tests, modals for projects</p>
           </div>
         </button>
       </div>
