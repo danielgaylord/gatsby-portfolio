@@ -24,7 +24,7 @@ Every good README has a table of contents, right?
 - [x] Connect site to Sanity backend for something like a blog
 - [ ] Add modal functionality for projects
 - [ ] Get feedback on looks and content to improve it for 'audience'
-- [ ] Try out new things to see how they work and what they'd look like (this'll never be done...)
+- [ ] Try out new things to see how they work and what they'd look like (this'll go on forever...)
 
 ## File Structure
 
