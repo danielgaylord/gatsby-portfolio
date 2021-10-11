@@ -52,6 +52,12 @@ Every good README has a table of contents, right?
 
 ## Changelog
 
+### 10/10/21
+
+From [Dan](https://github.com/danielgaylord)
+
+- Updated project page to reflect changes to Python Sudoku Solver project
+
 ### 10/7/21
 
 From [Dan](https://github.com/danielgaylord)
