@@ -74,7 +74,7 @@ export default function ProjectsPage() {
           <div className="project-desc">
             <h4>Sudoku Solver</h4>
             <p className="project-text">
-              A quick project that algorithmicly solves Sudoku puzzles as I would 'by hand'. Doesn't (yet) include the ability to solve naked pairs.
+              A program that algorithmicly solves Sudoku puzzles of various types using known solving techniques.
             </p>
             <p className ="project-text"><strong>Language(s):</strong> Python</p>
             <p className ="project-text"><strong>Next Step(s):</strong> GUI, improve algorithm</p>
