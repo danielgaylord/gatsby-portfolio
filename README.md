@@ -52,6 +52,16 @@ Every good README has a table of contents, right?
 
 ## Changelog
 
+### 10/11/21
+
+From [Dan](https://github.com/danielgaylord)
+
+- Updated bio page
+- Added a new post
+- Updated musing page to handle viewing multiple posts (looking forward to whenever something like `nth-class` exists)
+- Updated blog pages and sanity schema to represent categories as emojis
+- Updated blog pages so author picture and category emojis have tooltips so user knows what they are
+
 ### 10/10/21
 
 From [Dan](https://github.com/danielgaylord)
