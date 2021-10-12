@@ -14,6 +14,7 @@ exports.createPages = async ({graphql, actions}) => {
                         publishedAt(formatString: "MM/DD/YYYY")
                         categories {
                             title
+                            emoji
                         }
                         _rawBody
                         author {

@@ -1,7 +1,10 @@
+import { MdEditNote as icon } from 'react-icons/md'
+
 export default {
   name: 'post',
   title: 'Post',
   type: 'document',
+  icon,
   fields: [
     {
       name: 'title',

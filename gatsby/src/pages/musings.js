@@ -9,16 +9,19 @@ const MusingStyles = styled.div`
   }
 
   .musing-container {
+    display: inline-block;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    width: 100%;
   }
   
   .musing-pic {
     float: right;
     width: 30%;
+    max-height: 20rem;
   }
   .musing-text {
-    float: right;
+    float: left;
     width: 60%;
   }
 
@@ -39,30 +42,6 @@ const MusingStyles = styled.div`
 `;
 
 export default function MusingsPage() {
-  const query = graphql`
-    {
-      allSanityPost {
-        edges {
-          node {
-            id
-            slug {
-              current
-            }
-            title
-            body {
-              children {
-                text
-              }
-            }
-            author {
-              name
-            }
-          }
-        }
-      }
-    }
-  `
-
   return (
     <StaticQuery
       query = {graphql`
@@ -75,10 +54,6 @@ export default function MusingsPage() {
                   current
                 }
                 title
-                publishedAt(formatString: "MM/DD/YYYY")
-                categories {
-                  title
-                }
                 body {
                   children {
                     text
@@ -107,14 +82,16 @@ export default function MusingsPage() {
             </div>
             <React.Fragment>
               {data.allSanityPost.edges.map(post => (
-                <Link to={post.node.slug.current} key={post.node.id} className="musing-container">
-                  <GatsbyImage image={post.node.mainImage.asset.gatsbyImageData} alt="Workstation that is not my own...only a place holder" className="musing-pic"/>
-                  <div className="musing-text">
-                    <h2>{post.node.title}</h2>
-                    <p><small>By {post.node.author.name}</small></p>
-                    <p>{post.node.body[0].children[0].text}</p>
-                  </div>
-                </Link>
+                <div className="musing-container">
+                  <Link to={post.node.slug.current} key={post.node.id}>
+                    <GatsbyImage image={post.node.mainImage.asset.gatsbyImageData} alt="post image, see image note(s)" className="musing-pic"/>
+                    <div className="musing-text">
+                      <h2>{post.node.title}</h2>
+                      <p><small>By {post.node.author.name}</small></p>
+                      <p>{post.node.body[0].children[0].text}</p>
+                    </div>
+                  </Link>
+                </div>
               ))}
             </React.Fragment>
           </MusingStyles>
