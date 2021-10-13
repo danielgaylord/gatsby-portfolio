@@ -52,6 +52,13 @@ Every good README has a table of contents, right?
 
 ## Changelog
 
+### 10/13/21
+
+From [Dan](https://github.com/danielgaylord)
+
+- Updated bio page (included resume and changed job title)
+- Updated 404 (with a funny meme)
+
 ### 10/11/21
 
 From [Dan](https://github.com/danielgaylord)
