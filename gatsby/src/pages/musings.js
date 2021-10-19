@@ -46,7 +46,7 @@ export default function MusingsPage() {
     <StaticQuery
       query = {graphql`
         {
-          allSanityPost {
+          allSanityPost (sort: {fields: publishedAt, order: DESC}) {
             edges {
               node {
                 id
