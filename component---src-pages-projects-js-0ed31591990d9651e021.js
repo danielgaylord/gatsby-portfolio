@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_minimal=self.webpackChunkgatsby_starter_minimal||[]).push([[853],{744:function(e,t,n){n.r(t),n.d(t,{default:function(){return a}});var r=n(294);function a(){return r.createElement(r.Fragment,null,r.createElement("p",null,"The portfolio/project page"))}}}]);
-//# sourceMappingURL=component---src-pages-projects-js-0ed31591990d9651e021.js.map

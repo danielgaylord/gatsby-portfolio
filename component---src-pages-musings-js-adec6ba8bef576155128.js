@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_minimal=self.webpackChunkgatsby_starter_minimal||[]).push([[186],{6795:function(t,e,n){n.r(e),n.d(e,{default:function(){return l}});var a=n(7294);function l(){return a.createElement(a.Fragment,null,a.createElement("p",null,"My collections of thoughts, not a blog"))}}}]);
-//# sourceMappingURL=component---src-pages-musings-js-adec6ba8bef576155128.js.map
