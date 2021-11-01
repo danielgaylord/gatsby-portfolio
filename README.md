@@ -52,6 +52,12 @@ Every good README has a table of contents, right?
 
 ## Changelog
 
+### 10/22/21
+
+From [Dan](https://github.com/danielgaylord)
+
+- Updated main blog post page to correctly display multiple posts in order
+
 ### 10/13/21
 
 From [Dan](https://github.com/danielgaylord)
