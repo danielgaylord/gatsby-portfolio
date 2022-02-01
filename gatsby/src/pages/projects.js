@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import pydoku from "../assets/images/pydoku-solver.png";
 import blueprint from "../assets/images/nycdoe-cs4all-blueprint.png";
 import portfolio from "../assets/images/gatsby-portfolio.png";
+import toybox from "../assets/images/game-toybox.png"
 
 const ProjectStyles = styled.div`
   .project-container {
@@ -70,14 +71,25 @@ export default function ProjectsPage() {
         <p>(Click to go to each project's respective GitHub repository)</p>
       </div>
       <div className="project-container">
+        <button button className="project" style={{ backgroundImage: "url(" + toybox + ")" }} onClick={()=> window.open("https://github.com/danielgaylord/game-toybox", "_blank")}>
+          <div className="project-desc">
+            <h4>Game ToyBox</h4>
+            <p className="project-text">
+              A way that I can combine any little apps I make into one location to play with and explore.
+            </p>
+            <p className ="project-text"><strong>Language(s):</strong> HTML, CSS, Javascript, Python</p>
+            <p className ="project-text"><strong>Libraries/Tools:</strong> ReactJS, MatterJS, Material UI</p>
+            <p className ="project-text"><strong>Next Step(s):</strong> Trying to get Godot games to work in a React component.</p>
+          </div>
+        </button>
         <button className="project" style={{ backgroundImage: "url(" + pydoku + ")" }} onClick={()=> window.open("https://github.com/danielgaylord/pydoku-solver", "_blank")}>
           <div className="project-desc">
             <h4>Sudoku Solver</h4>
             <p className="project-text">
-              A program that algorithmicly solves Sudoku puzzles of various types using known solving techniques.
+              A program that algorithmicly solves Sudoku puzzles of various types using known solving techniques. The GUI for this app is being created for the Game Toybox.
             </p>
             <p className ="project-text"><strong>Language(s):</strong> Python</p>
-            <p className ="project-text"><strong>Next Step(s):</strong> GUI, improve algorithm</p>
+            <p className ="project-text"><strong>Next Step(s):</strong> Improve algorithm</p>
           </div>
         </button>
         <button className="project" style={{ backgroundImage: "url(" + blueprint + ")" }} onClick={()=> window.open("https://github.com/nycdoe-cs4all/cs4all-blueprint-gatsby", "_blank")}>
